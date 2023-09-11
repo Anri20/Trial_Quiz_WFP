@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-Route::get('/library', 'LibraryController@test');
+Route::get('/library', 'LibraryController@library')->name('library');
